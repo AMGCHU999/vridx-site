@@ -54,10 +54,16 @@
     <h2 style="color: #00ff88;">Begin Pilot Onboarding</h2>
     <p>Enter your corporate email to download the 30-day Pilot Agreement and receive the VRIDX integration key.</p>
     
-    <form action="https://formspree.io/f/mpqzaezk" method="POST" style="margin-top: 20px;">
-        <input type="email" name="email" placeholder="Corporate Email" required style="padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: white; width: 250px;">
-        <button type="submit" style="background-color: #00ff88; color: #000; padding: 12px 24px; border: none; font-weight: bold; border-radius: 4px; cursor: pointer;">Request Agreement & API Key</button>
-    </form>
+    <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST" style="margin-top: 20px;">
+    <input type="email" name="email" placeholder="Corporate Email" required style="padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: white; width: 250px; margin-bottom: 15px;">
+    
+    <div style="margin-bottom: 15px;">
+        <input type="checkbox" id="terms" name="terms_accepted" required>
+        <label for="terms" style="font-size: 0.8rem; color: #ccc;"> I agree to the <a href="#" style="color: #00ff88;">Terms of Service</a> and Confidentiality Agreement of UPPAY Canada Inc.</label>
+    </div>
+
+    <button type="submit" style="background-color: #00ff88; color: #000; padding: 12px 24px; border: none; font-weight: bold; border-radius: 4px; cursor: pointer;">Request Agreement & API Key</button>
+</form>
     
     <p style="font-size: 0.8rem; color: #666; margin-top: 15px;">By clicking, you agree to the UPPAY Canada Inc. privacy terms.</p>
 </div>
