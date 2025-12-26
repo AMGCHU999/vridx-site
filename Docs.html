@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRIDX | API Quickstart</title>
+    <style>
+        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Inter', sans-serif; line-height: 1.6; padding: 40px; }
+        .container { max-width: 900px; margin: auto; border: 1px solid #333; padding: 2rem; border-radius: 8px; background: #111; }
+        h1, h2 { color: #00ff88; }
+        code { background: #222; color: #00ff88; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+        pre { background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333; overflow-x: auto; color: #00ff88; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #888; text-decoration: none; font-size: 0.9rem; }
+        .back-link:hover { color: #00ff88; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Return to Manifesto</a>
+        <h1>VRIDX Intelligence Engine: API Quickstart</h1>
+        <p>This guide provides the technical specifications for integrating with the <strong>UPPAY Canada</strong> forensic brain.</p>
+
+        <h2>1. Authentication</h2>
+        <p>Requests must include the <code>x-goog-api-key</code> header using your proprietary key generated on Dec 25, 2025.</p>
+
+        <h2>2. Endpoint</h2>
+        <pre>POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent</pre>
+
+        <h2>3. Sample Payload</h2>
+<pre>{
+  "contents": [{
+    "parts": [
+      {"text": "Calculate Reliability Pulse score (0.0-1.0) for this asset."},
+      {"inline_data": { "mime_type": "image/jpeg", "data": "BASE64_ENCODED_IMAGE" }}
+    ]
+  }]
+}</pre>
+
+        <h2>4. Core Logic</h2>
+        <ul>
+            <li><strong>Reliability Pulse:</strong> 0.0 - 1.0 integrity score.</li>
+            <li><strong>Sovereignty Flag:</strong> Detects data truncation or anomalies.</li>
+        </ul>
+    </div>
+</body>
+</html>
